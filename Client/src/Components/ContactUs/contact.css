@@ -1,0 +1,39 @@
+.contact {
+  padding: 60px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f1f2fc;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 1400px;
+}
+
+.contact p {
+  width: 700px;
+  font-size: 27px;
+}
+
+.contact span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c6414c;
+}
+
+.contact a {
+  width: 160px;
+  height: 35px;
+  display: flex;
+  cursor: pointer;
+  color: #c6414c;
+  font-weight: bold;
+  border-radius: 3px;
+  align-items: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ed0000;
+}

@@ -1,0 +1,39 @@
+/* style to search donor page */
+
+.search_donor_container {
+  height: fit-content;
+  background-color: #fafafa;
+  padding: 100px 100px 70px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search_donor_container section {
+  text-align: center;
+}
+
+.search_donor_container h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.search_donor_container h1 span:nth-child(1) {
+  text-decoration-line: underline !important;
+  text-decoration-color: #ea0000;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+.search_donor_container h1 span:nth-child(2) {
+  color: #ea0000;
+}
+
+.search_donor_input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.search_donor_result {
+  margin: 50px;
+}

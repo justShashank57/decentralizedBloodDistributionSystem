@@ -1,0 +1,93 @@
+/* info.css */
+.info {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background: #f7f8fd;
+}
+
+.infotag {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.infotag hr {
+  width: 60%;
+  height: 4px;
+  margin: 10px auto; /* Centered horizontally */
+  background-color: red; /* Use one of the theme colors for the horizontal rule */
+  opacity: 1;
+  border: none;
+}
+
+.infotag p {
+  margin: 0px;
+  font-size: 24px; /* Adjusted for better readability */
+  color: red; /* Soft pink for the text */
+}
+
+.infotag p:nth-of-type(2) {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.infoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px; /* Reduced margin for a tighter layout */
+}
+
+.infoDetails {
+  width: 200px; /* Increased width for better content fit */
+  padding: 10px; /* More padding for better spacing */
+  text-align: center;
+  color: #5a5a5a; /* Mild grey for text, enhancing readability */
+  font-size: 16px; /* Larger font size for better visibility */
+  background-color: #e6e8fa; /* Subtle background color for each detail box */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  margin: 10px; /* Space between boxes */
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.infoDetails div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 10px auto; /* Ensure centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red; /* Theme color for the icon backgrounds */
+}
+
+.infoDetails img {
+  width: 60px;
+  height: 60px;
+}
+
+#readMore {
+  margin: 20px auto;
+  padding: 8px 30px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  color: #5a5a5a;
+  border: 2px solid red; /* Theme color for the button border */
+  border-radius: 10px;
+  background-color: #f0f0f0; /* Subtle background for the button */
+  display: block; /* Center button */
+  transition: all 0.5s ease;
+}
+
+#readMore:hover {
+  color: white;
+  background-color: red; /* Light background on hover for a pleasant effect */
+}

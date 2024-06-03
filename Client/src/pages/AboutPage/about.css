@@ -1,0 +1,190 @@
+.aboutComp {
+}
+
+.aboutHero {
+  width: 100%;
+  height: 70vh;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: #222222;
+  display: flex;
+  align-items: end;
+  padding-inline: 8rem;
+  padding-block: 4rem;
+  background-image: url("https://images.unsplash.com/photo-1615461065624-21b562ee5566?q=80&w=2840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+
+  ::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.201);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.aboutBody {
+  color: white;
+  z-index: 100;
+
+  > h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  .subHeading {
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+  }
+}
+
+.registerLine {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 10px;
+  animation: rainbow 5s ease infinite;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-color: #fff;
+  background-size: 1800% 1800%;
+  display: inline-block;
+  width: 100%;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 82%;
+  }
+
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0 82%;
+  }
+}
+
+.missionSec {
+  margin-block: 5rem;
+  text-align: center;
+  position: relative;
+
+  > h1 {
+    color: #d91106;
+    font-family: Poppins;
+    font-size: 2.2rem;
+    margin-block: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  > p {
+    color: rgba(51, 51, 51, 0.8);
+    font-family: Poppins;
+    font-size: 1.05rem;
+    font-style: normal;
+    margin-block: 2rem;
+    margin-inline: 6rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    letter-spacing: 0.075rem;
+  }
+}
+/* Style for the section containing the carousel */
+.collabSec {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f8fd; /* Light background color from your theme */
+}
+
+/* Style for the title within the carousel section */
+.collabSec > h1 {
+  color: #d91106; /* Soft pink color from your theme */
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-block: 2rem 1rem; /* Adjusted margin for better spacing */
+  font-weight: 700;
+}
+
+/* Container for each carousel item */
+.carousalContainer {
+  position: relative;
+  text-align: center; /* Centers content of the carousel */
+  width: 50%;
+  margin: auto;
+}
+
+.carousalContainer > div {
+  margin: auto; /* Centers the image container horizontally */
+  width: 80%; /* Optimal width for better visibility of images */
+  overflow: hidden; /* Hides anything outside this container */
+}
+
+.carousalContainer {
+  > div {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+
+    > img {
+      width: 100%; /* Ensures the image fills the container */
+      height: 100%; /* Keeps the image's aspect ratio */
+      transition: transform 0.5s ease; /* Smooth transformation upon hover */
+    }
+  }
+}
+
+.carousalContainer img:hover {
+  transform: scale(
+    1.1
+  ); /* Slightly enlarges the image on hover for a dynamic effect */
+}
+
+/* Styling for the caption under the image */
+.legend {
+  font-family: "Poppins", sans-serif;
+  color: #ffc3bf;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.382);
+  padding: 10px; /* Padding around the text */
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Ensures the background extends across the container */
+  text-align: center; /* Centers the text within the legend */
+}
+
+@media (max-width: 768px) {
+  .collabSec > h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .carousalContainer > div {
+    width: 95%; /* Allows for more margin on smaller screens */
+  }
+
+  .legend {
+    font-size: 1rem; /* Smaller text for better fit on smaller devices */
+  }
+}

@@ -1,0 +1,75 @@
+.homebg {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.header {
+  padding: 100px 0 50px 100px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none !important;
+}
+
+.header .title {
+  color: white;
+  padding: 50px 0 0 20px;
+}
+
+.header .title span {
+  font-size: 20px;
+  font-family: monospace;
+  font-style: italic;
+}
+
+.bldrop {
+  position: absolute;
+  animation: up-down 1s infinite alternate;
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.header img {
+  width: 700px;
+  height: 500px;
+}
+
+.header .serviceBtn {
+  padding-top: 30px;
+}
+
+.header .serviceBtn button {
+  margin: 10px 0;
+  padding: 6px 25px;
+  cursor: pointer;
+  font-size: large;
+  font-family: monospace;
+  font-weight: bold;
+  color: #ea0000;
+  border: 1px solid #ed0000;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.header .serviceBtn button:nth-of-type(1) {
+  background-color: #ea0000;
+  color: whitesmoke;
+  border: none;
+}
+
+.header
+  .serviceBtn
+  button:hover:not(.header .serviceBtn button:nth-of-type(1)) {
+  background-color: #e06a6a34;
+}
